@@ -16,6 +16,7 @@ phases:
       - rm -rf /tmp/*
   build:
     commands:
+      - chmod +x hugo
       - hugo 
       - hugo deploy
       - make clean
