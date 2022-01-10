@@ -5,14 +5,15 @@ environment_variables:
     HUGO_VERSION: "0.91.2"
     
 phases:
-#   install:
-    # commands:                                                                 
-    #   - cd /tmp
+  install:
+    commands:                                                                 
+      - cd /tmp
     #   - wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_extended_0.80.0_Linux-64bit.tar.gz
-    #   - tar -xzf hugo_extended_0.80.0_Linux-64bit.tar.gz
-    #   - mv hugo /usr/bin/hugo
-    #   - cd 
-    #   - rm -rf /tmp/*
+      - wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-32bit.tar.gz
+      - tar -xzf hugo_0.91.2_Linux-32bit.tar.gz
+      - mv hugo /usr/bin/hugo
+      - cd -
+      - rm -rf /tmp/*
   build:
     commands:
       - rm -rf public
