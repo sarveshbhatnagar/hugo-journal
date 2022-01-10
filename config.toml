@@ -5,4 +5,4 @@ theme = "ezhil"
 [[deployment.targets]]
 # Name
 name="awsbucket"
-URL = "s3://hugo-journal?region=us-east-2"
+URL = "s3://hugo-journal/?region=us-east-2"
