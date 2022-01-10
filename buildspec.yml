@@ -14,7 +14,6 @@ phases:
       - mkdir -p ~/bin
       - chmod +x hugo
       - mv hugo ~/bin
-      - cd ~/bin
     #   - cd ~/environment
   build:
     commands:
