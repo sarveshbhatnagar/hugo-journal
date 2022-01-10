@@ -15,7 +15,7 @@ phases:
       - chmod +x hugo
       - mv hugo ~/bin
       - cd ~/bin
-      - cd ~/environment
+    #   - cd ~/environment
   build:
     commands:
       - make clean
