@@ -7,18 +7,19 @@ environment_variables:
 phases:
   install:
     commands:                                                                 
-      - cd /tmp
+    #   - cd ~/environment
     #   - wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_extended_0.80.0_Linux-64bit.tar.gz
       - wget https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_0.91.2_Linux-32bit.tar.gz
       - tar -xzf hugo_0.91.2_Linux-32bit.tar.gz
-      - mv hugo /usr/bin/hugo
-      - cd 
-      - rm -rf /tmp/*
+      - mkdir -p ~/bin
+      - mv hugo ~/bin
+      - cd ~/bin
+      - chmod +x hugo
+      - cd ~/environment
   build:
     commands:
-      - hugo 
-      - hugo deploy
       - make clean
+      - make deploy
   post_build:
     commands:
       - echo Build completed on `date`
