@@ -5,6 +5,6 @@ theme = "ezhil"
 uglyURLs = true
 
 [[deployment.targets]]
-# An arbitrary name for this target.
+
 name = "awsbucket"
 URL = "s3://hugo-journal/?region=us-east-2" #your bucket here
