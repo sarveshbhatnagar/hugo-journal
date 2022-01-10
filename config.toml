@@ -2,7 +2,7 @@ baseURL = "http://hugo-journal.s3-website.us-east-2.amazonaws.com/"
 languageCode = "en-us"
 title = "Sarvesh's Journal"
 theme = "ezhil"
-
+uglyURLs = true
 
 [[deployment.targets]]
 # An arbitrary name for this target.
