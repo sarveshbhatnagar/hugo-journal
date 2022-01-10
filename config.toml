@@ -1,0 +1,8 @@
+baseURL = "http://hugo-journal.s3-website.us-east-2.amazonaws.com/"
+languageCode = "en-us"
+title = "Sarvesh's Journal"
+theme = "ezhil"
+[[deployment.targets]]
+# Name
+name="awsbucket"
+URL = "s3://hugo-journal?region=us-east-2"
